@@ -1,0 +1,50 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Hunter/Documents/projects/cpp/Project 5/ContainerIfc-proj5.h
+
+C:/Users/Hunter/Documents/projects/cpp/Project 5/MyList-proj5.h
+ContainerIfc-proj5.h
+C:/Users/Hunter/Documents/projects/cpp/Project 5/ContainerIfc-proj5.h
+Node-proj5.h
+C:/Users/Hunter/Documents/projects/cpp/Project 5/Node-proj5.h
+
+C:/Users/Hunter/Documents/projects/cpp/Project 5/MyVector-proj5.h
+sstream
+-
+string
+-
+ContainerIfc-proj5.h
+C:/Users/Hunter/Documents/projects/cpp/Project 5/ContainerIfc-proj5.h
+
+C:/Users/Hunter/Documents/projects/cpp/Project 5/Node-proj5.h
+cstdlib
+-
+
+C:/Users/Hunter/Documents/projects/cpp/Project 5/Queue1-proj5.h
+MyVector-proj5.h
+C:/Users/Hunter/Documents/projects/cpp/Project 5/MyVector-proj5.h
+
+C:/Users/Hunter/Documents/projects/cpp/Project 5/Queue3-proj5.h
+MyList-proj5.h
+C:/Users/Hunter/Documents/projects/cpp/Project 5/MyList-proj5.h
+
+C:/Users/Hunter/Documents/projects/cpp/Project 5/main.cpp
+iostream
+-
+chrono
+-
+MyVector-proj5.h
+C:/Users/Hunter/Documents/projects/cpp/Project 5/MyVector-proj5.h
+Queue1-proj5.h
+C:/Users/Hunter/Documents/projects/cpp/Project 5/Queue1-proj5.h
+MyList-proj5.h
+C:/Users/Hunter/Documents/projects/cpp/Project 5/MyList-proj5.h
+Queue3-proj5.h
+C:/Users/Hunter/Documents/projects/cpp/Project 5/Queue3-proj5.h
+

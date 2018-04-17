@@ -23,9 +23,6 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -50,17 +47,17 @@ RM = "C:\Program Files\JetBrains\CLion 2017.3.3\bin\cmake\bin\cmake.exe" -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Hunter\Documents\projects\cpp\Project 5\cmake-build-debug\CMakeFiles\CMakeTmp"
+CMAKE_SOURCE_DIR = "C:\Users\Hunter\Documents\projects\cpp\Project 5"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Hunter\Documents\projects\cpp\Project 5\cmake-build-debug\CMakeFiles\CMakeTmp"
+CMAKE_BINARY_DIR = "C:\Users\Hunter\Documents\projects\cpp\Project 5\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@echo No interactive CMake dialog available...
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
 	"C:\Program Files\JetBrains\CLion 2017.3.3\bin\cmake\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
@@ -71,7 +68,7 @@ edit_cache/fast: edit_cache
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
-	@echo Running CMake to regenerate build system...
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
 	"C:\Program Files\JetBrains\CLion 2017.3.3\bin\cmake\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
@@ -82,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Hunter\Documents\projects\cpp\Project 5\cmake-build-debug\CMakeFiles\CMakeTmp\CMakeFiles" "C:\Users\Hunter\Documents\projects\cpp\Project 5\cmake-build-debug\CMakeFiles\CMakeTmp\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Hunter\Documents\projects\cpp\Project 5\cmake-build-debug\CMakeFiles" "C:\Users\Hunter\Documents\projects\cpp\Project 5\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Hunter\Documents\projects\cpp\Project 5\cmake-build-debug\CMakeFiles\CMakeTmp\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Hunter\Documents\projects\cpp\Project 5\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -113,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cmTC_4494c
+# Target rules for targets named Project_5
 
 # Build rule for target.
-cmTC_4494c: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 cmTC_4494c
-.PHONY : cmTC_4494c
+Project_5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Project_5
+.PHONY : Project_5
 
 # fast build rule for target.
-cmTC_4494c/fast:
-	$(MAKE) -f CMakeFiles\cmTC_4494c.dir\build.make CMakeFiles/cmTC_4494c.dir/build
-.PHONY : cmTC_4494c/fast
+Project_5/fast:
+	$(MAKE) -f CMakeFiles\Project_5.dir\build.make CMakeFiles/Project_5.dir/build
+.PHONY : Project_5/fast
 
-feature_tests.obj: feature_tests.cxx.obj
+main.obj: main.cpp.obj
 
-.PHONY : feature_tests.obj
+.PHONY : main.obj
 
 # target to build an object file
-feature_tests.cxx.obj:
-	$(MAKE) -f CMakeFiles\cmTC_4494c.dir\build.make CMakeFiles/cmTC_4494c.dir/feature_tests.cxx.obj
-.PHONY : feature_tests.cxx.obj
+main.cpp.obj:
+	$(MAKE) -f CMakeFiles\Project_5.dir\build.make CMakeFiles/Project_5.dir/main.cpp.obj
+.PHONY : main.cpp.obj
 
-feature_tests.i: feature_tests.cxx.i
+main.i: main.cpp.i
 
-.PHONY : feature_tests.i
+.PHONY : main.i
 
 # target to preprocess a source file
-feature_tests.cxx.i:
-	$(MAKE) -f CMakeFiles\cmTC_4494c.dir\build.make CMakeFiles/cmTC_4494c.dir/feature_tests.cxx.i
-.PHONY : feature_tests.cxx.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles\Project_5.dir\build.make CMakeFiles/Project_5.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-feature_tests.s: feature_tests.cxx.s
+main.s: main.cpp.s
 
-.PHONY : feature_tests.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-feature_tests.cxx.s:
-	$(MAKE) -f CMakeFiles\cmTC_4494c.dir\build.make CMakeFiles/cmTC_4494c.dir/feature_tests.cxx.s
-.PHONY : feature_tests.cxx.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles\Project_5.dir\build.make CMakeFiles/Project_5.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -158,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... cmTC_4494c
+	@echo ... Project_5
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... feature_tests.obj
-	@echo ... feature_tests.i
-	@echo ... feature_tests.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 .PHONY : help
 
 
